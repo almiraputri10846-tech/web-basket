@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Ekstrakurikuler Basket</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+    <style>
+        :root {
+            --basket-orange: #ce7c1f;
+            --basket-dark: #0a0908;
+        }
+
+        body {
+            background-color: #f4f4f4;
+            margin: 0;
+        }
+
+        header {
+            background-color: var(--basket-orange);
+            color: white;
+            padding: 80px 20px 40px;
+            text-align: center;
+            position: relative;
+        }
+
+        header img {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            width: 170px;
+        }
+
+        nav.bg-dark {
+            background-color: var(--basket-dark) !important;
+        }
+
+        .navbar-nav {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .nav-link {
+            padding: 0.5rem 1rem !important;
+            font-weight: 500;
+        }
+
+        .title {
+            font-family: Arial, sans-serif;
+            font-size: 70px;
+        }
+
+        .contact-card {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            padding: 40px;
+        }
+
+        .contact-info h3 {
+            color: var(--basket-orange);
+            margin-bottom: 20px;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 15px;
+        }
+
+        .contact-icon {
+            min-width: 30px;
+            margin-right: 15px;
+            color: var(--basket-orange);
+            font-weight: bold;
+        }
+
+        .form-control:focus {
+            border-color: var(--basket-orange);
+            box-shadow: 0 0 0 0.25rem rgba(206, 124, 31, 0.25);
+        }
+
+        .btn-contact {
+            background-color: var(--basket-orange);
+            border-color: var(--basket-orange);
+            color: white;
+        }
+
+        .btn-contact:hover {
+            background-color: #b86e1a;
+            border-color: #b86e1a;
+        }
+
+        @media (max-width: 576px) {
+            .contact-card {
+                padding: 25px 20px;
+            }
+
+            header {
+                padding: 60px 20px 30px;
+            }
+
+            header img {
+                width: 120px;
+                top: 15px;
+                left: 15px;
+            }
+
+            .title {
+                font-size: 42px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <img src="img/basket.png" alt="Logo Basket">
+        <h1 class="display-4 title">Ekstrakulikuler Basketball</h1>
+        <p class="lead">SMK Negeri 1 Dukuhturi</p>
+    </header>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg bg-dark">
+        <div class="container justify-content-center">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link text-white px-3" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link text-white px-3" href="contact.html">Contact</a></li>
+                <li class="nav-item"><a class="nav-link text-white px-3" href="profil.html">Profile</a></li>
+                <li class="nav-item"><a class="nav-link text-white px-3" href="galeri.html">Galery</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container my-5">
+        <div class="row">
+            <div class="col-lg-6 mb-4 mb-lg-0">
+                <div class="contact-card">
+                    <h3>Informasi Kontak</h3>
+
+                    <div class="contact-item">
+                        <span class="contact-icon">📍</span>
+                        <div>
+                            <strong>Alamat</strong><br>
+                            SMK Negeri 1 Dukuhturi<br>
+                            Jl. Raya Karang Anyar No.17, Pekauman Kulon, Kec. Dukuhturi,
+                            Kabupaten Tegal, Jawa Tengah 52131
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <span class="contact-icon">📱</span>
+                        <div>
+                            <strong>Telepon</strong><br>
+                            (0283) 351533
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <span class="contact-icon">📧</span>
+                        <div>
+                            <strong>Email</strong><br>
+                            basket.smekar@gmail.com<br>
+                            ekstra.basket@smkn1dukuhturi.sch.id
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <span class="contact-icon">⏰</span>
+                        <div>
+                            <strong>Jadwal Latihan</strong><br>
+                            Sabtu: 13.00 - 15.00 WIB
+                        </div>
+                    </div>
+
+                    <div class="text-center mt-4">
+                        <h4 class="mb-3">Media Sosial Kami</h4>
+                        <a target="_blank" href="https://www.instagram.com/onedkt_basketball"
+                            class="btn btn-outline-danger rounded-circle d-flex align-items-center justify-content-center mx-auto"
+                            style="width: 40px; height: 40px;">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="col-lg-6">
+                <div class="contact-card">
+                    <h3 class="text-center mb-4">Kirim Pesan</h3>
+                    <form>
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Nama Lengkap</label>
+                            <input type="text" class="form-control" id="name" placeholder="Masukkan nama Anda">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="Masukkan email Anda">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="phone" class="form-label">Nomor Telepon</label>
+                            <input type="number" class="form-control" id="phone" placeholder="Masukkan nomor telepon">
+                        </div>
+
+                        <div class="mb-4">
+                            <label for="message" class="form-label">Pesan</label>
+                            <textarea class="form-control" id="message" rows="5"
+                                placeholder="Tulis pesan Anda di sini..."></textarea>
+                        </div>
+
+                        <div class="d-grid">
+                            <button type="submit" class="btn btn-contact btn-lg">Kirim Pesan</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+</html>
